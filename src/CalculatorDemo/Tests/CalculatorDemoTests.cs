@@ -8,7 +8,7 @@ namespace Tests
     [TestFixture]
     public class CalculatorDemoTests
     {
-        private IWebDriver _driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"),
+        private readonly IWebDriver _driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"),
                                                          DesiredCapabilities.Firefox());
 
         [SetUp]
@@ -79,7 +79,40 @@ namespace Tests
             Assert.AreEqual(string.Empty, _driver.FindElement(By.CssSelector("div#display")).Text);
         }
 
-        
+        [Test]
+        public void Adding_two_numbers_should_give_a_correct_result()
+        {
+            TestMath(3, 2, "+", 5);
+        }
+
+        [Test]
+        public void Subtracting_two_numbers_should_give_a_correct_result()
+        {
+            TestMath(3, 2, "-", 1);
+        }
+
+        [Test]
+        public void Multiplying_two_numbers_should_give_a_correct_result()
+        {
+            TestMath(3, 2, "*", 6);
+        }
+
+        [Test]
+        public void Dividing_two_numbers_should_give_a_correct_result()
+        {
+            TestMath(3, 2, "divide", 6);
+        }
+
+        private void TestMath(int leftOperand, int rightOperand, string @operator, int expectedResult)
+        {
+            _driver.FindElement(By.Id(leftOperand.ToString())).Click();
+            _driver.FindElement(By.Id(@operator)).Click();
+            _driver.FindElement(By.Id(rightOperand.ToString())).Clear();
+            _driver.FindElement(By.Id("equals")).Clear();
+            Assert.AreEqual(expectedResult.ToString(), _driver.FindElement(By.CssSelector("div#display")).Text);
+        }
+
+
         private void TestNumber(string number)
         {
             _driver.FindElement(By.Id(number)).Click();

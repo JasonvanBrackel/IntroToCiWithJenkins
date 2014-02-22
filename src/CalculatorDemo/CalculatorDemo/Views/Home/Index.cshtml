@@ -62,8 +62,84 @@
                         });
                 });
             };
+            var InitializeKeypresses = function() {
+                $(document).keydown(function (event) {
+                    var charCode = event.keyCode;
+                    var id = TranslateCharacterCodeToId(charCode);
+                    if (id != undefined) {
+                        var button = $('#' + id);
+                        if (button.hasClass('numberButton'))
+                            button.addClass('numberButton-Pressed');
+                        if (button.hasClass('operatorButton'))
+                            button.addClass('operatorButton-Pressed');
 
+                        me.ProcessButtonPush(button);
+                    }
+                }).keyup(function (event) {
+                    var charCode = event.keyCode;
+                    var id = TranslateCharacterCodeToId(charCode);
+                    if (id != undefined) {
+                        var button = $('#' + id);
+                        if (button.hasClass('numberButton'))
+                            button.removeClass('numberButton-Pressed');
+                        if (button.hasClass('operatorButton'))
+                            button.removeClass('operatorButton-Pressed');
+
+                    }
+                });
+            };
+
+            var TranslateCharacterCodeToId = function(charCode) {
+                switch (charCode) {
+                case 13:
+                case 187:
+                    return 'equals';
+                case 48:
+                case 96:
+                    return '0';
+                case 49:
+                case 97:
+                    return '1';
+                case 50:
+                case 98:
+                    return '2';
+                case 51:
+                case 99:
+                    return '3';
+                case 52:
+                case 100:
+                    return '4';
+                case 53:
+                case 101:
+                    return '5';
+                case 54:
+                case 102:
+                    return '6';
+                case 55:
+                case 103:
+                    return '7';
+                case 56:
+                case 104:
+                    return '8';
+                case 57:
+                case 105:
+                    return '9';
+                case 106:
+                    return 'multiply';
+                case 107:
+                    return 'plus';
+                case 109:
+                    return '-';
+                case 110:
+                    return '.';
+                case 111:
+                    return 'divide';
+                default:
+                    return 'default';
+                }
+            };
             InitializeCalculator(calculatorObject);
+            InitializeKeypresses();
         };
 
         Calculator.prototype.ProcessButtonPush = function (pressedButton) {
@@ -89,8 +165,13 @@
                 return;
             }
 
-            if (button.attr('id') === 'divide') {
-                me.ProcessDivide();
+            if (button.attr('id') === 'multiply') {
+                me.ProcessMultiply();
+                return;
+            }
+            
+            if (button.attr('id') === 'plus') {
+                me.ProcessPlus();
                 return;
             }
 
@@ -155,6 +236,28 @@
             if (me.leftOperand == undefined)
                 return;
             var value = '/';
+            if (me.rightOperand != undefined && me.operator != undefined)
+                me.Solve();
+            me.operator = value;
+            me.display.Replace(value);
+        };
+        
+        Calculator.prototype.ProcessMultiply = function () {
+            var me = this;
+            if (me.leftOperand == undefined)
+                return;
+            var value = '*';
+            if (me.rightOperand != undefined && me.operator != undefined)
+                me.Solve();
+            me.operator = value;
+            me.display.Replace(value);
+        };
+        
+        Calculator.prototype.ProcessPlus = function () {
+            var me = this;
+            if (me.leftOperand == undefined)
+                return;
+            var value = '+';
             if (me.rightOperand != undefined && me.operator != undefined)
                 me.Solve();
             me.operator = value;
@@ -287,7 +390,7 @@
                         <div class="button numberButton" id="9">
                             <div class="buttonLabel">9</div>
                         </div>
-                        <div class="button operatorButton" id="+">
+                        <div class="button operatorButton" id="plus">
                             <div class="buttonLabel">+</div>
                         </div>
                     </div>
@@ -315,7 +418,7 @@
                         <div class="button numberButton" id="3">
                             <div class="buttonLabel">3</div>
                         </div>
-                        <div class="button operatorButton" id="*">
+                        <div class="button operatorButton" id="multiply">
                             <div class="buttonLabel">*</div>
                         </div>
                     </div>
