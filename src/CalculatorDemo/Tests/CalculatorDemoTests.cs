@@ -72,6 +72,7 @@ namespace Tests
         }
 
         [Test]
+        [Ignore]
         public void Clear_Button_Should_Clear_Display()
         {
             TestNumber("clear");
