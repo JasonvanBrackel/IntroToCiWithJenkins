@@ -8,6 +8,6 @@ xcopy src\calculatordemo\calculatordemo\*.* build\Calculator\interfaces\root /S 
 copy src\calculatordemo\DeploymentManifest.xml build\Calculator /Y
 del build\Calculator.zip
 cd build\Calculator
-"C:\Program Files\7-Zip\7z.exe" a -tZip -y build\Calculator.zip
+"C:\Program Files\7-Zip\7z.exe" a -tZip -y build\Calculator.zip build\Calculator
 cd ..
 cd ..
