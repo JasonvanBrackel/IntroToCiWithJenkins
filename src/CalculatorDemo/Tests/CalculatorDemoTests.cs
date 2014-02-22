@@ -24,12 +24,6 @@ namespace Tests
         }
 
         [Test]
-        public void Typing_1_Should_Append_1_to_the_Display()
-        {
-            TestTypedNumber("1");
-        }
-
-        [Test]
         public void Clicking_Button_2_Should_Append_2_to_the_Display()
         {
             TestNumber("2");
@@ -75,6 +69,72 @@ namespace Tests
         public void Clicking_Button_9_Should_Append_9_to_the_Display()
         {
             TestNumber("9");
+        }
+
+        [Test]
+        public void Clicking_Button_0_Should_Append_9_to_the_Display()
+        {
+            TestNumber("0");
+        }
+
+        [Test]
+        public void Typing_1_Should_Append_1_to_the_Display()
+        {
+            TestTypedNumber("1");
+        }
+
+        [Test]
+        public void Typing_2_Should_Append_2_to_the_Display()
+        {
+            TestTypedNumber("2");
+        }
+
+        [Test]
+        public void Typing_3_Should_Append_3_to_the_Display()
+        {
+            TestTypedNumber("3");
+        }
+
+        [Test]
+        public void Typing_4_Should_Append_4_to_the_Display()
+        {
+            TestTypedNumber("4");
+        }
+
+        [Test]
+        public void Typing_5_Should_Append_5_to_the_Display()
+        {
+            TestTypedNumber("5");
+        }
+
+        [Test]
+        public void Typing_6_Should_Append_6_to_the_Display()
+        {
+            TestTypedNumber("6");
+        }
+
+        [Test]
+        public void Typing_7_Should_Append_7_to_the_Display()
+        {
+            TestTypedNumber("7");
+        }
+
+        [Test]
+        public void Typing_8_Should_Append_8_to_the_Display()
+        {
+            TestTypedNumber("8");
+        }
+
+        [Test]
+        public void Typing_9_Should_Append_9_to_the_Display()
+        {
+            TestTypedNumber("9");
+        }
+
+        [Test]
+        public void Typing_0_Should_Append_0_to_the_Display()
+        {
+            TestTypedNumber("0");
         }
 
         [Test]
