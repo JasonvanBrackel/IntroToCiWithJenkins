@@ -89,6 +89,11 @@
                 return;
             }
 
+            if (button.attr('id') === 'divide') {
+                me.ProcessDivide();
+                return;
+            }
+
             if (button.hasClass('numberButton')) {
                 me.ProcessNumber(button);
                 return;
@@ -145,6 +150,17 @@
             me.display.Replace(value);
         };
 
+        Calculator.prototype.ProcessDivide = function () {
+            var me = this;
+            if (me.leftOperand == undefined)
+                return;
+            var value = '/';
+            if (me.rightOperand != undefined && me.operator != undefined)
+                me.Solve();
+            me.operator = value;
+            me.display.Replace(value);
+        };
+
         Calculator.prototype.Solve = function () {
             var me = this;
             var equation = me.leftOperand + ' ' + me.operator + ' ' + me.rightOperand;
@@ -164,18 +180,18 @@
     </script>
     <style type="text/css">
         body {
-            background-color: blueviolet;
+            background-color: #30455E;
         }
 
         #calculator {
-            height: 310px;
+            height: 362px;
             width: 1208px;
             background-color: black;
             padding: 0px 25px 25px 25px;
             position: fixed;
             top: 50%;
             left: 50%;
-            margin-top: -160px;
+            margin-top: -181px;
             margin-left: -604px;
             border: 1px solid white;
         }
@@ -197,6 +213,7 @@
             border: 1px solid black;
             font-family: sans-serif;
             font-size: 20px;
+            border-radius: 50%;
         }
 
             .button .buttonLabel {
@@ -212,13 +229,13 @@
         }
 
         .numberButton {
-            background-color: blue;
+            background-color: #0a50a0;
             color: white;
         }
 
         .numberButton-Pressed {
             background-color: white;
-            color: blue;
+            color: #0a50a0;
         }
 
         .operatorButton {
@@ -246,6 +263,20 @@
             </div>
             <div id="center">
                 <div id="buttons">
+                    <div class="buttonRow">
+                        <div class="button numberButton" id="">
+                            <div class="buttonLabel"></div>
+                        </div>
+                        <div class="button numberButton" id="">
+                            <div class="buttonLabel"></div>
+                        </div>
+                        <div class="button numberButton" id="">
+                            <div class="buttonLabel"></div>
+                        </div>
+                        <div class="button operatorButton" id="clear">
+                            <div class="buttonLabel">C</div>
+                        </div>
+                    </div>
                     <div class="buttonRow">
                         <div class="button numberButton" id="7">
                             <div class="buttonLabel">7</div>
@@ -298,7 +329,7 @@
                         <div class="button numberButton" id="equals">
                             <div class="buttonLabel">=</div>
                         </div>
-                        <div class="button operatorButton" id="/">
+                        <div class="button operatorButton" id="divide">
                             <div class="buttonLabel">&divide;</div>
                         </div>
                     </div>

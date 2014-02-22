@@ -18,64 +18,65 @@ namespace Tests
         }
 
         [Test]
-        public void Button_1_Should_Append_1_to_the_Display()
+        public void Clicking_Button_1_Should_Append_1_to_the_Display()
         {
             TestNumber("1");
         }
 
         [Test]
-        public void Button_2_Should_Append_2_to_the_Display()
+        public void Clicking_Button_2_Should_Append_2_to_the_Display()
         {
             TestNumber("2");
         }
 
         [Test]
-        public void Button_3_Should_Append_3_to_the_Display()
+        public void Clicking_Button_3_Should_Append_3_to_the_Display()
         {
             TestNumber("3");
         }
 
         [Test]
-        public void Button_4_Should_Append_4_to_the_Display()
+        public void Clicking_Button_4_Should_Append_4_to_the_Display()
         {
             TestNumber("4");
         }
 
         [Test]
-        public void Button_5_Should_Append_5_to_the_Display()
+        public void Clicking_Button_5_Should_Append_5_to_the_Display()
         {
             TestNumber("5");
         }
 
         [Test]
-        public void Button_6_Should_Append_6_to_the_Display()
+        public void Clicking_Button_6_Should_Append_6_to_the_Display()
         {
             TestNumber("6");
         }
         
         [Test]
-        public void Button_7_Should_Append_7_to_the_Display()
+        public void Clicking_Button_7_Should_Append_7_to_the_Display()
         {
             TestNumber("7");
         }
 
         [Test]
-        public void Button_8_Should_Append_8_to_the_Display()
+        public void Clicking_Button_8_Should_Append_8_to_the_Display()
         {
             TestNumber("8");
         }
 
         [Test]
-        public void Button_9_Should_Append_9_to_the_Display()
+        public void Clicking_Button_9_Should_Append_9_to_the_Display()
         {
             TestNumber("9");
         }
 
         [Test]
-        [Ignore]
-        public void Clear_Button_Should_Clear_Display()
+        public void Clicking_Clear_Button_Should_Clear_Display()
         {
-            TestNumber("clear");
+            _driver.FindElement(By.Id("clear")).Click();
+
+            Assert.AreEqual(string.Empty, _driver.FindElement(By.CssSelector("div#display")).Text);
         }
 
         
