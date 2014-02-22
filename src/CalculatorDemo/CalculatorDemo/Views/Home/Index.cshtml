@@ -170,6 +170,11 @@
                 return;
             }
             
+            if (button.attr('id') === 'divide') {
+                me.ProcessDivide();
+                return;
+            }
+            
             if (button.attr('id') === 'plus') {
                 me.ProcessPlus();
                 return;

@@ -24,6 +24,12 @@ namespace Tests
         }
 
         [Test]
+        public void Typing_1_Should_Append_1_to_the_Display()
+        {
+            TestTypedNumber("1");
+        }
+
+        [Test]
         public void Clicking_Button_2_Should_Append_2_to_the_Display()
         {
             TestNumber("2");
@@ -52,7 +58,7 @@ namespace Tests
         {
             TestNumber("6");
         }
-        
+
         [Test]
         public void Clicking_Button_7_Should_Append_7_to_the_Display()
         {
@@ -79,10 +85,15 @@ namespace Tests
             Assert.AreEqual(string.Empty, _driver.FindElement(By.CssSelector("div#display")).Text);
         }
 
+        private void TestTypedNumber(string typedKey)
+        {
+           _driver.FindElement(By.TagName("body")).SendKeys(typedKey);
+        }
+
         [Test]
         public void Adding_two_numbers_should_give_a_correct_result()
         {
-            TestMath(3, 2, "+", 5);
+            TestMath(3, 2, "plus", 5);
         }
 
         [Test]
@@ -94,21 +105,21 @@ namespace Tests
         [Test]
         public void Multiplying_two_numbers_should_give_a_correct_result()
         {
-            TestMath(3, 2, "*", 6);
+            TestMath(3, 2, "multiply", 6);
         }
 
         [Test]
         public void Dividing_two_numbers_should_give_a_correct_result()
         {
-            TestMath(3, 2, "divide", 6);
+            TestMath(3, 2, "divide", 1.5);
         }
 
-        private void TestMath(int leftOperand, int rightOperand, string @operator, int expectedResult)
+        private void TestMath(double leftOperand, double rightOperand, string @operator, double expectedResult)
         {
             _driver.FindElement(By.Id(leftOperand.ToString())).Click();
             _driver.FindElement(By.Id(@operator)).Click();
-            _driver.FindElement(By.Id(rightOperand.ToString())).Clear();
-            _driver.FindElement(By.Id("equals")).Clear();
+            _driver.FindElement(By.Id(rightOperand.ToString())).Click();
+            _driver.FindElement(By.Id("equals")).Click();
             Assert.AreEqual(expectedResult.ToString(), _driver.FindElement(By.CssSelector("div#display")).Text);
         }
 
