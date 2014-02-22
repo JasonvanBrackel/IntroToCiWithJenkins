@@ -1,7 +1,5 @@
 ECHO "Building calculator"
 rd .\build\Calculator /S /Q
-mkdir .\build\Calculator
-mkdir .\build\Calculator\interfaces
 mkdir .\build\Calculator\interfaces\root
 msbuild .\src\CalculatorDemo\CalculatorDemo.sln
 xcopy .\src\calculatordemo\calculatordemo\*.* .\build\Calculator\interfaces\root /I /S /-Y
