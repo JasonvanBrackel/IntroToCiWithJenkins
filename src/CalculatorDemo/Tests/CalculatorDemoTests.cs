@@ -8,10 +8,7 @@ namespace Tests
     [TestFixture]
     public class CalculatorDemoTests
     {
-
-        
-        private readonly IWebDriver _driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"),
-                                                         DesiredCapabilities.Chrome());
+        private readonly IWebDriver _driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.Chrome());
 
         [SetUp]
         public void OpenCalculator()
