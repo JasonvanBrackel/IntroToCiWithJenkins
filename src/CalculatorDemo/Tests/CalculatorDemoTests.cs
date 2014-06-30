@@ -6,14 +6,14 @@ using OpenQA.Selenium.Remote;
 namespace Tests
 {
     [TestFixture]
-    public class CalculatorDemoTests
+    public abstract class CalculatorDemoTests
     {
-        private readonly IWebDriver _driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.Firefox());
+        protected IWebDriver Driver { get; set; }
 
         [SetUp]
         public void OpenCalculator()
         {
-            _driver.Url = "http://apps.apprenda.jason/calculator--v1/";
+            Driver.Url = "http://apps.apprenda.jason/calculator--v1/";
         }
 
         [Test]
@@ -139,14 +139,14 @@ namespace Tests
         [Test]
         public void Clicking_Clear_Button_Should_Clear_Display()
         {
-            _driver.FindElement(By.Id("clear")).Click();
+            Driver.FindElement(By.Id("clear")).Click();
 
-            Assert.AreEqual(string.Empty, _driver.FindElement(By.CssSelector("div#display")).Text);
+            Assert.AreEqual(string.Empty, Driver.FindElement(By.CssSelector("div#display")).Text);
         }
 
         private void TestTypedNumber(string typedKey)
         {
-           _driver.FindElement(By.TagName("body")).SendKeys(typedKey);
+           Driver.FindElement(By.TagName("body")).SendKeys(typedKey);
         }
 
         [Test]
@@ -175,26 +175,51 @@ namespace Tests
 
         private void TestMath(double leftOperand, double rightOperand, string @operator, double expectedResult)
         {
-            _driver.FindElement(By.Id(leftOperand.ToString())).Click();
-            _driver.FindElement(By.Id(@operator)).Click();
-            _driver.FindElement(By.Id(rightOperand.ToString())).Click();
-            _driver.FindElement(By.Id("equals")).Click();
-            Assert.AreEqual(expectedResult.ToString(), _driver.FindElement(By.CssSelector("div#display")).Text);
+            Driver.FindElement(By.Id(leftOperand.ToString())).Click();
+            Driver.FindElement(By.Id(@operator)).Click();
+            Driver.FindElement(By.Id(rightOperand.ToString())).Click();
+            Driver.FindElement(By.Id("equals")).Click();
+            Assert.AreEqual(expectedResult.ToString(), Driver.FindElement(By.CssSelector("div#display")).Text);
         }
 
 
         private void TestNumber(string number)
         {
-            _driver.FindElement(By.Id(number)).Click();
+            Driver.FindElement(By.Id(number)).Click();
 
-            Assert.AreEqual(number, _driver.FindElement(By.CssSelector("div#display")).Text);
+            Assert.AreEqual(number, Driver.FindElement(By.CssSelector("div#display")).Text);
         }
 
         [TestFixtureTearDown]
         public void Close()
         {
-            _driver.Close();
+            Driver.Close();
         }
     }
+
+    public class IETests : CalculatorDemoTests
+    {
+        public IETests()
+        {
+            Driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.InternetExplorer());
+        }
+    }
+
+    public class ChromeTests : CalculatorDemoTests
+    {
+        public ChromeTests()
+        {
+            Driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.Chrome());
+        }
+    }
+
+    public class FirefoxTests : CalculatorDemoTests
+    {
+        public FirefoxTests()
+        {
+            Driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.Firefox());
+        }
+    }
+
 
 }
