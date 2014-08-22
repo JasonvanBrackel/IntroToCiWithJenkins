@@ -10,10 +10,11 @@ namespace Tests
     {
         protected IWebDriver Driver { get; set; }
 
+        // change this URL to your root site/diredctory port number    
         [SetUp]
         public void OpenCalculator()
         {
-            Driver.Url = "http://apps.apprenda.jason/calculator--v1/";
+            Driver.Url = "http://localhost:57568/Home/Index/";
         }
 
         [Test]
