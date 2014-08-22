@@ -49,7 +49,12 @@ The server is now running & listening for requests on port 4444 of the local hos
 
 3. Run Tests. The batch file directory contains the test runner: <root>\<build>\run-unit-tests.bat  
 nunit-console src\CalculatorDemo\Tests\bin\Debug\Tests.dll /xml=build/TestResults.xml
-Start a command window (not Powershell, and not the Powershell ISE)
+
+  a. Start a powershell command window (not the Powershell ISE)
+  b. From the root directory run the .bat in the "build" subdirectory
+  PS \RootFolder> build\run-unit-tests.bat
+  
+  
 
 
 
