@@ -44,17 +44,19 @@ ities Capabilities [{platform=MAC, browserName=iPad, version=}] does not match w
 
 The server is now running & listening for requests on port 4444 of the local host.
 
-2. Start Visual Studio and open the calulator solution.  <root>\src\CalculatorDemo. Right click the solution and select
-"debug" > "start new instance".  The calculator application will start in the browser.
+2. Start the application 
+  a. Open the calulator solution in visual studio.  (<root>\src\CalculatorDemo)
+  b. Edit the port number in the test that the root project will use when it launches the site.  This is found
+     in the \src\CalculatorDemo\Tests\CalculatorDemoTests.cs -  Driver.Url = "http://localhost:57568/Home/Index";
+  c.  Right click the solution and select
+  "debug" > "start new instance".  The calculator application will start in the browser.
 
 3. Run Tests. The batch file directory contains the test runner: <root>\<build>\run-unit-tests.bat  
 nunit-console src\CalculatorDemo\Tests\bin\Debug\Tests.dll /xml=build/TestResults.xml
+Start a Powershell Command window (not Powershell ISE) and change the dirctory to the root of the application.
+PS \yourroot>  build\run-unit-tests.bat
 
-  a. Start a powershell command window (not the Powershell ISE)
-  b. From the root directory run the .bat in the "build" subdirectory
-  PS \RootFolder> build\run-unit-tests.bat
-  
-  
+
 
 
 
