@@ -1,12 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "root", "CalculatorDemo\root.csproj", "{E7C30785-6748-4086-B4A5-C07A863382B9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86DC3A3E-419D-4FB9-ACD9-FE050C9589B5}"
-	ProjectSection(SolutionItems) = preProject
-		DeploymentManifest.xml = DeploymentManifest.xml
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{CA243D8C-5556-47FE-9ADA-504E9E41A149}"
 EndProject

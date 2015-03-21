@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jdk1.7.0_40\bin\java.exe" -Dwebdriver.chrome.driver=.\chromedriver.exe -Dwebdriver.ie.driver=.\iedriverserver.exe -jar .\selenium-server-standalone-2.45.0.jar -hub
