@@ -10,4 +10,4 @@ if(Test-Path $packagePath)
     Remove-Item $packagePath -Recurse
 }
 mkdir $packagePath
-& nuget.exe pack $projectPath\root.csproj -Verbosity detailed -OutputDirectory $packagePath -IncludeReferencedProjects -Build -Prop Configuration=Release
+& nuget.exe pack "$projectPath\root.csproj" -Verbosity detailed -OutputDirectory $packagePath -IncludeReferencedProjects -Build -Prop Configuration=Release

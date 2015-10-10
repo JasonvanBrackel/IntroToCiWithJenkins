@@ -7,4 +7,4 @@ $env:Path += $nugetPath
 
 $package = (Get-ChildItem $packagePath).FullName
 
-nuget.exe push $package eeab1b48-bbd7-4fe8-b5c0-bef25a6b5a6b
+& nuget.exe push "$package" eeab1b48-bbd7-4fe8-b5c0-bef25a6b5a6b
