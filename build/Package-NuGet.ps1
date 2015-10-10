@@ -1,6 +1,4 @@
-Param([string]$path=$env:Workspace)
-
-$rootPath = $path
+$rootPath = (Get-Location).Path
 $projectPath = $rootPath + '\src\CalculatorDemo\CalculatorDemo'
 $binPath = $projectPath + 'bin'
 $buildPath = $rootPath + '\build'
