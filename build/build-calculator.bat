@@ -1,4 +1,3 @@
-ECHO "Building calculator"
 rd .\build\Calculator /S /Q
 mkdir .\build\Calculator\interfaces\root
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe .\src\CalculatorDemo\CalculatorDemo.sln
