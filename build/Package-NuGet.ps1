@@ -1,4 +1,6 @@
-$rootPath = (Get-Location).Path
+Param([string]$path=$env:Workspace)
+
+$rootPath = $path
 $projectPath = $rootPath + '\src\CalculatorDemo\CalculatorDemo'
 $binPath = $projectPath + 'bin'
 $buildPath = $rootPath + '\build'

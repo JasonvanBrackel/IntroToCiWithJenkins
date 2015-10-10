@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\bin\Debug\Tests.dll" total="75" errors="0" failures="75" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-10-10" time="01:47:03">
+  <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.6421" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\code\IntroToCiWithJenkins" machine-name="VBLAPTOP" user="jvanbrackel" user-domain="APPRENDA" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\bin\Debug\Tests.dll" executed="True" result="Failure" success="False" time="6.948" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="6.930" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="ChromeTests" executed="True" result="Error" success="False" time="2.754" asserts="0">
+            <failure>
+              <message><![CDATA[SetUp : OpenQA.Selenium.WebDriverException : Unexpected error. System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:4444
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)]]></message>
+              <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at Tests.ChromeTests..ctor() in c:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 205
+]]></stack-trace>
+            </failure>
+            <results>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.ChromeTests.CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in ChromeTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="FirefoxTests" executed="True" result="Error" success="False" time="2.094" asserts="0">
+            <failure>
+              <message><![CDATA[SetUp : OpenQA.Selenium.WebDriverException : Unexpected error. System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:4444
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)]]></message>
+              <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at Tests.FirefoxTests..ctor() in c:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 213
+]]></stack-trace>
+            </failure>
+            <results>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.FirefoxTests.CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in FirefoxTests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="IETests" executed="True" result="Error" success="False" time="2.065" asserts="0">
+            <failure>
+              <message><![CDATA[SetUp : OpenQA.Selenium.WebDriverException : Unexpected error. System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:4444
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)]]></message>
+              <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at Tests.IETests..ctor() in c:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 221
+]]></stack-trace>
+            </failure>
+            <results>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+              <test-case name="Tests.IETests.CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                <failure>
+                  <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+                  <stack-trace />
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

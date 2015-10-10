@@ -1,4 +1,6 @@
-﻿$rootPath = (Get-Location).Path
+﻿Param([string]$path=$env:Workspace)
+
+$rootPath = $path
 $packagePath = $rootPath + '\package'
 
 $buildPath = $rootPath + '\build'
