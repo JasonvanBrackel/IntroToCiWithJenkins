@@ -1,5 +1,5 @@
 ﻿acs registercloud -Url https://apps.apprenda.mck603 -alias mck
-acs connectcloud -cloudalias mck -user jason@vanbrackel.net -password apprendaadmin -Remember
+acs connectcloud -cloudalias mck -user jason.vanbrackel@mckesson.com -password apprendaadmin -Remember
 ECHO "Removing application calculator"
 acs removeapplication -AppAlias calculator
 ECHO "Deploying application calculator"
