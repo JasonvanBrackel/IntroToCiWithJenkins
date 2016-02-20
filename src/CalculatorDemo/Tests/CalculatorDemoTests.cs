@@ -14,7 +14,7 @@ namespace Tests
         [SetUp]
         public void OpenCalculator()
         {
-            Driver.Url = "http://apps.apprenda.mck603/calculator--v1/";
+            Driver.Url = "http://apps.apprenda.jason/calculator--v1/";
         }
 
         [Test]
