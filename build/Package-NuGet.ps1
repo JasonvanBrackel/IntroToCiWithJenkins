@@ -10,4 +10,4 @@ if(Test-Path $packagePath)
     Remove-Item $packagePath -Recurse
 }
 mkdir $packagePath
-& $nugetPath\nuget.exe pack "$projectPath\root.csproj" -Verbosity detailed -OutputDirectory $packagePath -IncludeReferencedProjects -Build -Prop Configuration=Release
+& $nugetPath\nuget.exe pack "$projectPath\root.csproj" -Verbosity detailed -OutputDirectory $packagePath -IncludeReferencedProjects -Build -Prop Configuration=Release VisualStudioVersion=12.0
