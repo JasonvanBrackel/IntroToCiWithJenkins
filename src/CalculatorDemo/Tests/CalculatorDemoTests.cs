@@ -1,7 +1,5 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 
 namespace Tests
 {
@@ -14,7 +12,8 @@ namespace Tests
         [SetUp]
         public void OpenCalculator()
         {
-            Driver.Url = "http://apps.apprenda.jason/calculator--v1/";
+            //Driver.Url = "http://apps.apprenda.jvb/calculator--v1/";
+            Driver.Url = "http://localhost:57568/";
         }
 
         [Test]
@@ -197,28 +196,4 @@ namespace Tests
             Driver.Close();
         }
     }
-
-    public class ChromeTests : CalculatorDemoTests
-    {
-        public ChromeTests()
-        {
-            Driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.Chrome());
-        }
-    }
-
-    public class FirefoxTests : CalculatorDemoTests
-    {
-        public FirefoxTests()
-        {
-            Driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.Firefox());
-        }
-    }
-
-    //public class IETests : CalculatorDemoTests
-    //{
-    //    public IETests()
-    //    {
-    //        Driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.InternetExplorer());
-    //    }
-    //}
 }

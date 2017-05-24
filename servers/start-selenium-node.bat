@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jre1.8.0_101\bin\java.exe" -Dwebdriver.chrome.driver=.\chromedriver.exe -Dwebdriver.ie.driver=.\IEDriverServer_win32.exe -Dwebdriver.gecko.driver=.\geckodriver.exe -jar .\selenium-server-standalone-3.0.0-beta3.jar -role node -hub http://localhost:4444/grid/register

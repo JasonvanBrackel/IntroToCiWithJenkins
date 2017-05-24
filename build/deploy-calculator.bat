@@ -1,5 +1,5 @@
 ﻿
-acs registercloud -Url https://apps.apprenda.jason -alias apprenda
+acs registercloud -Url https://apps.apprenda.jvb -alias apprenda
 acs connectcloud -cloudalias apprenda -user jvanbrackel@apprenda.com -password password -Remember
 ECHO "Removing application calculator"
 acs removeapplication -AppAlias calculator

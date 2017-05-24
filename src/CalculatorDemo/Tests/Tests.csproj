@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculatorDemoTests.cs" />
+    <Compile Include="ChromeTests.cs" />
+    <Compile Include="FirefoxTests.cs" />
+    <Compile Include="IETests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

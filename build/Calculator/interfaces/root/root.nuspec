@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/JasonvanBrackel/IntroToCiWithJenkins</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>A library to show off NuGet</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Continuous Integration Delivery</tags>
+  </metadata>
+</package>

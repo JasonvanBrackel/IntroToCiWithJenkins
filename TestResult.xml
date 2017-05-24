@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="75" result="Failed" total="75" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.4.1.0" clr-version="4.0.30319.42000" start-time="2016-09-29 19:43:44Z" end-time="2016-09-29 19:44:10Z" duration="25.618637">
+  <command-line><![CDATA["C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe"   .\src\CalculatorDemo\Tests\bin\Debug\Tests.dll]]></command-line>
+  <test-suite type="Assembly" id="1-1078" name="D:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\bin\Debug\Tests.dll" fullname="D:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\bin\Debug\Tests.dll" runstate="Runnable" testcasecount="75" result="Failed" duration="25.562769" total="75" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0" site="Child">
+    <properties>
+      <property name="_PID" value="20512" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Namespace" id="1-1079" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="75" result="Failed" duration="25.551954" total="75" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0" site="SetUp">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1-1000" name="ChromeTests" fullname="Tests.ChromeTests" runstate="Runnable" testcasecount="25" result="Passed" duration="11.601877" total="25" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-case id="1-1022" name="CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" fullname="Tests.ChromeTests.CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Passed" duration="0.825724" asserts="1" />
+        <test-case id="1-1010" name="CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" runstate="Runnable" result="Passed" duration="0.251269" asserts="1" />
+        <test-case id="1-1001" name="CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" runstate="Runnable" result="Passed" duration="0.275343" asserts="1" />
+        <test-case id="1-1002" name="CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" runstate="Runnable" result="Passed" duration="0.262616" asserts="1" />
+        <test-case id="1-1003" name="CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" runstate="Runnable" result="Passed" duration="0.277964" asserts="1" />
+        <test-case id="1-1004" name="CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" runstate="Runnable" result="Passed" duration="0.266530" asserts="1" />
+        <test-case id="1-1005" name="CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" runstate="Runnable" result="Passed" duration="0.227168" asserts="1" />
+        <test-case id="1-1006" name="CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" runstate="Runnable" result="Passed" duration="0.270862" asserts="1" />
+        <test-case id="1-1007" name="CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" runstate="Runnable" result="Passed" duration="0.273405" asserts="1" />
+        <test-case id="1-1008" name="CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" runstate="Runnable" result="Passed" duration="0.306772" asserts="1" />
+        <test-case id="1-1009" name="CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" runstate="Runnable" result="Passed" duration="0.263838" asserts="1" />
+        <test-case id="1-1021" name="CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" runstate="Runnable" result="Passed" duration="0.275185" asserts="1" />
+        <test-case id="1-1025" name="CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" fullname="Tests.ChromeTests.CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Passed" duration="0.505418" asserts="1" />
+        <test-case id="1-1024" name="CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" fullname="Tests.ChromeTests.CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Passed" duration="0.445331" asserts="1" />
+        <test-case id="1-1023" name="CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" fullname="Tests.ChromeTests.CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Passed" duration="0.549874" asserts="1" />
+        <test-case id="1-1020" name="CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" runstate="Runnable" result="Passed" duration="0.249196" asserts="0" />
+        <test-case id="1-1011" name="CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" runstate="Runnable" result="Passed" duration="0.176947" asserts="0" />
+        <test-case id="1-1012" name="CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" runstate="Runnable" result="Passed" duration="0.182545" asserts="0" />
+        <test-case id="1-1013" name="CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" runstate="Runnable" result="Passed" duration="0.211012" asserts="0" />
+        <test-case id="1-1014" name="CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" runstate="Runnable" result="Passed" duration="0.225450" asserts="0" />
+        <test-case id="1-1015" name="CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" runstate="Runnable" result="Passed" duration="0.187616" asserts="0" />
+        <test-case id="1-1016" name="CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" runstate="Runnable" result="Passed" duration="0.181780" asserts="0" />
+        <test-case id="1-1017" name="CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" runstate="Runnable" result="Passed" duration="0.210545" asserts="0" />
+        <test-case id="1-1018" name="CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" runstate="Runnable" result="Passed" duration="0.204924" asserts="0" />
+        <test-case id="1-1019" name="CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" fullname="Tests.ChromeTests.CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" runstate="Runnable" result="Passed" duration="0.182702" asserts="0" />
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1026" name="FirefoxTests" fullname="Tests.FirefoxTests" runstate="Runnable" testcasecount="25" result="Failed" duration="12.271787" total="25" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1048" name="CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" fullname="Tests.FirefoxTests.CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Passed" duration="0.785254" asserts="1" />
+        <test-case id="1-1036" name="CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" runstate="Runnable" result="Passed" duration="0.280822" asserts="1" />
+        <test-case id="1-1027" name="CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" runstate="Runnable" result="Passed" duration="0.262920" asserts="1" />
+        <test-case id="1-1028" name="CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" runstate="Runnable" result="Passed" duration="0.269339" asserts="1" />
+        <test-case id="1-1029" name="CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" runstate="Runnable" result="Passed" duration="0.298053" asserts="1" />
+        <test-case id="1-1030" name="CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" runstate="Runnable" result="Passed" duration="0.263238" asserts="1" />
+        <test-case id="1-1031" name="CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" runstate="Runnable" result="Passed" duration="0.258329" asserts="1" />
+        <test-case id="1-1032" name="CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" runstate="Runnable" result="Passed" duration="0.286238" asserts="1" />
+        <test-case id="1-1033" name="CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" runstate="Runnable" result="Passed" duration="0.285173" asserts="1" />
+        <test-case id="1-1034" name="CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" runstate="Runnable" result="Passed" duration="0.344999" asserts="1" />
+        <test-case id="1-1035" name="CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" runstate="Runnable" result="Passed" duration="0.276059" asserts="1" />
+        <test-case id="1-1047" name="CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" runstate="Runnable" result="Passed" duration="0.277177" asserts="1" />
+        <test-case id="1-1051" name="CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" fullname="Tests.FirefoxTests.CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Passed" duration="0.405492" asserts="1" />
+        <test-case id="1-1050" name="CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" fullname="Tests.FirefoxTests.CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Passed" duration="0.393497" asserts="1" />
+        <test-case id="1-1049" name="CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" fullname="Tests.FirefoxTests.CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Passed" duration="0.404705" asserts="1" />
+        <test-case id="1-1046" name="CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.461398" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 136]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1037" name="CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.429445" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 82]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1038" name="CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.429119" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 88]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1039" name="CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.446050" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 94]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1040" name="CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.438000" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 100]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1041" name="CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.432957" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 106]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1042" name="CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.410200" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 112]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1043" name="CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.421661" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 118]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1044" name="CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.476137" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 124]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1045" name="CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" fullname="Tests.FirefoxTests.CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" runstate="Runnable" result="Failed" label="Error" duration="0.452855" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : Unable to locate element: #body (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=21968, browserVersion=49.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 33a77857-18a5-4542-a91f-dafdd8f2230a
+*** Element info: {Using=tag name, value=body}]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at Tests.CalculatorDemoTests.TestTypedNumber(String typedKey) in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 149
+   at Tests.CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\CalculatorDemoTests.cs:line 130]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1052" name="IETests" fullname="Tests.IETests" runstate="Runnable" testcasecount="25" result="Failed" label="Error" duration="1.669923" total="25" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0" site="Parent">
+        <failure>
+          <message><![CDATA[SetUp : System.InvalidOperationException : Unable to create new remote session. desired capabilities = Capabilities [{browserName=internet explorer, version=, platform=WINDOWS}], required capabilities = null
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'jvb', ip: '169.254.57.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: InternetExplorerDriver (33)]]></message>
+          <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)
+   at Tests.IETests..ctor() in d:\code\IntroToCiWithJenkins\src\CalculatorDemo\Tests\IETests.cs:line 10]]></stack-trace>
+        </failure>
+        <test-case id="1-1074" name="CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" fullname="Tests.IETests.CalculatorDemoTests.Adding_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1062" name="CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_0_Should_Append_9_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1053" name="CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_1_Should_Append_1_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1054" name="CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_2_Should_Append_2_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1055" name="CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_3_Should_Append_3_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1056" name="CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_4_Should_Append_4_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1057" name="CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_5_Should_Append_5_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1058" name="CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_6_Should_Append_6_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1059" name="CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_7_Should_Append_7_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1060" name="CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_8_Should_Append_8_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1061" name="CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Button_9_Should_Append_9_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1073" name="CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" fullname="Tests.IETests.CalculatorDemoTests.Clicking_Clear_Button_Should_Clear_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1077" name="CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" fullname="Tests.IETests.CalculatorDemoTests.Dividing_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1076" name="CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" fullname="Tests.IETests.CalculatorDemoTests.Multiplying_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1075" name="CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" fullname="Tests.IETests.CalculatorDemoTests.Subtracting_two_numbers_should_give_a_correct_result" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1072" name="CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_0_Should_Append_0_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1063" name="CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_1_Should_Append_1_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1064" name="CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_2_Should_Append_2_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1065" name="CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_3_Should_Append_3_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1066" name="CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_4_Should_Append_4_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1067" name="CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_5_Should_Append_5_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1068" name="CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_6_Should_Append_6_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1069" name="CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_7_Should_Append_7_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1070" name="CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_8_Should_Append_8_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+        <test-case id="1-1071" name="CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" fullname="Tests.IETests.CalculatorDemoTests.Typing_9_Should_Append_9_to_the_Display" runstate="Runnable" result="Failed" duration="0.000000" asserts="0">
+          <failure>
+            <message><![CDATA[TestFixtureSetUp failed in IETests]]></message>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

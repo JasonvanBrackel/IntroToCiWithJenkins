@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jre1.8.0_101\bin\java.exe" -jar .\selenium-server-standalone-3.0.0-beta3.jar -role hub
